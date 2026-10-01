@@ -1,5 +1,3 @@
-from pydoc import text
-
 import pandas as pd
 df= pd.read_csv('Womens Clothing E-Commerce Reviews.csv')
 a= df.head()
@@ -83,20 +81,20 @@ complaint_data= pd.DataFrame({
 })
 print(complaint_data) #to print the 'complaint_data' dataframe
 
-# import matplotlib.pyplot as plt
-# plt.figure(figsize=(8,5))
+import matplotlib.pyplot as plt
+plt.figure(figsize=(8,5))
 
-# plt.bar(
-#     complaint_data['complaint theme'],
-#     complaint_data['review_count']
-# )
+plt.bar(
+    complaint_data['complaint theme'],
+    complaint_data['review_count']
+)
 
-# plt.xlabel('complaint theme')
-# plt.ylabel('number of reviews')
-# plt.title('Number of reviews for each complaint theme')
-# plt.xticks(rotation=45)
-# plt.tight_layout()
-# plt.show() #to show the bar chart of the number of reviews for each complaint theme
+plt.xlabel('complaint theme')
+plt.ylabel('number of reviews')
+plt.title('Number of reviews for each complaint theme')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show() #to show the bar chart of the number of reviews for each complaint theme
 
 complaint_data['percentage']=round((complaint_data['review_count']/complaint_data['review_count'].sum())*100,2) #to calculate the percentage of reviews for each complaint theme and store it in a new column 'percentage' in the 'complaint_data' dataframe
 print(complaint_data) #to print the 'complaint_data' dataframe with the new 'percentage' column
