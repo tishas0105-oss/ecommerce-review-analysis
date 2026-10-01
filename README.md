@@ -26,5 +26,3 @@ This project analyzes the reviews and rating given by the customers in order to 
 - Negative review analysis
 - Complaint theme identification
 - Complaint analysis by clothing class
-##Key Insights
--
