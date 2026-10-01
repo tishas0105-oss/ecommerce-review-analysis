@@ -1,5 +1,5 @@
 # ecommerce-review-analysis
-customer review and product analysis using SQL. Python and Power BI
+customer review and product analysis using SQL, Python and Power BI
 ## Project Overview
 This project analyzes the reviews and rating given by the customers in order to understand customer satisfaction, common customer complaints and product performance.
 ## Tools and Technnologies
